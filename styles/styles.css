@@ -59,7 +59,7 @@ img {
 .banner__photo {
     height: 150px;
     width: 150px;
-    background: lightgray url("../_images/profile.jpg");
+    background: lightgray url("../images/profile.jpg");
     border-radius: 20px;
     margin-right: 25px;
     float: left;
