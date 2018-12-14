@@ -38,6 +38,11 @@ a{
     text-decoration: none;
 }
 
+.banner a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
 .banner a:hover {
     color:#FFFFFF;
     text-decoration: underline;
