@@ -34,6 +34,26 @@ img {
     border-radius: 10px;
 }
 
+a{
+    text-decoration: none;
+}
+
+.banner a:hover {
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+.banner a:visited {
+    color:#FFFFFF;
+}
+
+p, .info, .intro {
+    max-width: 800px;
+    font-family: "Roboto", "Arial", "Tahoma", "Veranda";
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
 .container {
     width: 1170px;
     margin-right: auto;
@@ -149,16 +169,7 @@ img {
     float: right;
 }
 
-a{
-    text-decoration: none;
-}
 
-p, .info, .intro {
-    max-width: 800px;
-    font-family: "Roboto", "Arial", "Tahoma", "Veranda";
-    font-weight: 400;
-    font-size: 1.25rem;
-}
 
 .intro {
     font-family: "Kanit", "Arial", "Tahoma", "Veranda";
