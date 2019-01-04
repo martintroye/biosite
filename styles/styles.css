@@ -82,8 +82,8 @@ p, .info, .intro {
 }
 
 .banner__photo {
-    height: 150px;
-    width: 150px;
+    height: 295px;
+    width: 238px;
     background: lightgray url("../images/profile.jpg");
     border-radius: 20px;
     margin-right: 25px;
@@ -107,6 +107,7 @@ p, .info, .intro {
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin-top: 2em;
 }
 
 /*.banner__highlights li:nth-child(odd) {
@@ -114,7 +115,7 @@ p, .info, .intro {
 } */
 
 .banner__highlights li:nth-child(even) {
-    padding-top: 1em;
+    padding-top: 2em;
     /*transform: rotate(15deg);*/
 } 
 
@@ -124,10 +125,10 @@ p, .info, .intro {
 
 .banner__highlights ul li {
     display: inline;
-    font-size: 1.25rem !important;
+    font-size: 1.563rem !important;
     list-style-type: none;
     display: inline;
-    padding-left: 1em;
+    padding-left: .65em;
     color:#FFFFFF !important;
     float:left;
 } 
@@ -147,6 +148,21 @@ p, .info, .intro {
     background-color: #6744A0;
     height: 315px;
     width: 150px;
+}
+
+.content__button {
+    margin-right: 5px;
+}
+
+.content__button--right {
+    float: right;
+    bottom: 1px;
+}
+
+.content__button--left {
+    float: left;
+    clear: left;
+    bottom: 1px;
 }
 
 .content__frame--left {
