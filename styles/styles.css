@@ -30,6 +30,32 @@ figcaption {
     font-size: .8rem;    
 }
 
+article {
+    height: auto;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    border: 1px solid #DFDDDD;
+
+}
+
+aside {
+    padding: 5px;
+    background-color: #6744A0;
+    height: 315px;
+    width: 150px;
+    float:left; 
+}
+
+.aside--right {
+    padding: 5px;
+    background-color: #6744A0;
+    height: 315px;
+    width: 150px;
+    float: right; 
+}
+
 img {
     border-radius: 10px;
 }
@@ -53,7 +79,7 @@ a{
 }
 
 p, .info, .intro {
-    max-width: 900px;
+    max-width: auto;
     font-family: "Roboto", "Arial", "Tahoma", "Veranda";
     font-weight: 400;
     font-size: 1.25rem;
@@ -122,7 +148,6 @@ p, .info, .intro {
     margin-top: 2em;
 }
 
-
 .banner__highlights li:nth-child(even) {
     padding-top: 2em;
 } 
@@ -132,35 +157,17 @@ p, .info, .intro {
 }
 
 .banner__highlights ul li {
-    font-size: 1.563rem !important;
+    font-size: 1.563rem !important; /** !important added to fix issues seen in ff and ie **/
     list-style-type: none;
     display: inline;
     padding-left: .65em;
-    color:#FFFFFF !important;
+    color:#FFFFFF !important; /** !important added to fix issues seen in ff and ie **/
     float:left;
 } 
 
-.content {
-    width: 1170px;
-    height: auto;
-    overflow: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 25px;
-    border: 1px solid #DFDDDD;
-}
-
-.content__frame {
-    padding: 5px;
-    background-color: #6744A0;
-    height: 315px;
-    width: 150px;
-}
-
 .content__button {
     margin-right: 5px;
-    color:#6744A0 !important;
-
+    color:#6744A0 !important; /** !important added to fix issues seen in ff and ie **/
 }
 
 .content__button--right {
@@ -170,16 +177,8 @@ p, .info, .intro {
 
 .content__button--left {
     float: left;
-    clear: left;
+    clear: left; /** does not allow element to float on the left **/
     bottom: 1px;
-}
-
-.content__frame--left {
-    float: left;
-}
-
-.content__frame--right {
-    float: right;
 }
 
 .content__frame__photo {
@@ -190,24 +189,15 @@ p, .info, .intro {
 }
 
 .content__copy {
+    margin-left: 175px;
+    margin-right: 25px;
+    display: block; /** puts the content beside the photo **/
+}
+
+.content__copy--right {
     margin-left: 25px;
-    float: left;
-    width:auto;
-}
-
-.top {
-    margin-top: 25px;
-    float: right;
-}
-
-
-.intro {
-    font-family: "Kanit", "Arial", "Tahoma", "Veranda";
-    text-align: center;
-    max-width: 1100px;
-    font-size: 1.563rem;
-    letter-spacing: .1rem;
-    color: #2b1a47
+    margin-right: 175px;
+    display: block; /** puts the content beside the photo **/
 }
 
 h2 {
